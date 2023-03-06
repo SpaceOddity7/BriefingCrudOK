@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Deportistas{% endblock %}
+
+{% block body %}
+    <h1>Edit Deportistas</h1>
+
+    {{ include('deportistas/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_deportistas_index') }}" class="backto">back to list</a>
+
+    {{ include('deportistas/_delete_form.html.twig') }}
+{% endblock %}
