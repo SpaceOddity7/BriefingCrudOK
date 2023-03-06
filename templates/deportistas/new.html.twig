@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Deportistas{% endblock %}
+
+{% block body %}
+    <h1>Registro Deportistas</h1>
+
+    {{ include('deportistas/_form.html.twig') }}
+
+    <a href="{{ path('app_deportistas_index') }}" class="backto">back to list</a>
+{% endblock %}

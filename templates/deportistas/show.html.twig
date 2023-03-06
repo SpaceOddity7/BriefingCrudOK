@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Deportistas{% endblock %}
+
+{% block body %}
+    <h1>Deportistas</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ deportista.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombre</th>
+                <td>{{ deportista.nombre }}</td>
+            </tr>
+            <tr>
+                <th>Apellidos</th>
+                <td>{{ deportista.apellidos }}</td>
+            </tr>
+            <tr>
+                <th>Edad</th>
+                <td>{{ deportista.edad }}</td>
+            </tr>
+            <tr>
+                <th>Peso</th>
+                <td>{{ deportista.peso }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ deportista.email }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_deportistas_index') }}" class="backto">back to list</a>
+
+    <a href="{{ path('app_deportistas_edit', {'id': deportista.id}) }}">edit</a>
+
+    {{ include('deportistas/_delete_form.html.twig') }}
+{% endblock %}

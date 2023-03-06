@@ -1,0 +1,95 @@
+/*general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    color:white;
+}
+
+body {
+    justify-content: center;
+    background-image: url(./chica-kickboxer.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    
+    
+}
+
+h1 {
+    background: linear-gradient(#ff0000, #3c0ce8);
+    font-size: 2rem;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+
+/*inputs*/
+
+.required{
+    margin: 5px;
+    font-family: 'Jost', sans-serif;
+}
+
+/*etiquetas inputs*/
+
+label{
+    display: block;
+    top: 0;
+    left: 0;
+}
+
+input, select{
+    color:black;
+}
+
+#deportistas{
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+}
+
+/*botones*/
+
+.btn{
+    display:flex;
+    font-weight:bolder;
+    background: linear-gradient(#ff0000, #3c0ce8);
+    border: radius 35px;
+    border:blue thin solid;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    transition: all .3s ease-in;
+    color: white
+}
+
+/*para colocar los enlaces*/
+
+.backto{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    color: #3c0ce8;
+    font-weight: bold;  
+}
+
+.link{
+    position:relative;
+    color:#3c0ce8;
+    font-weight: bold;  
+}
+.create{
+    color:#3c0ce8;
+    font-size: large;
+    font-weight: bold;  
+}
+
+
+
+
+
